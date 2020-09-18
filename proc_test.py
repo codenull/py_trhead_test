@@ -66,8 +66,8 @@ def make_calc(array_len, thread_count):
 def main():
     make_calc(10000000, 1)
     make_calc(10000000, 4)
-    make_calc(10000000, 12)
-    make_calc(10000000, 16)
+    make_calc(10000000, 10)
+    make_calc(10000000, 20)
 
 
 
