@@ -13,16 +13,18 @@ arr[i] = (arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.
 # Результат
 ## Thread
 ```
-Len: 10000000. Threads: 1. Time: 6525.
-Len: 10000000. Threads: 4. Time: 6557.
-Len: 10000000. Threads: 10. Time: 6686.
-Len: 10000000. Threads: 20. Time: 6751.
+Len: 10000000. Threads: 1. Time: 6521.
+Len: 10000000. Threads: 2. Time: 6680.
+Len: 10000000. Threads: 4. Time: 6606.
+Len: 10000000. Threads: 10. Time: 6646.
+Len: 10000000. Threads: 20. Time: 6763.
 ```
 
 ## Process
 ```
-Len: 10000000. Threads: 1. Time: 6685.
-Len: 10000000. Threads: 4. Time: 2370.
-Len: 10000000. Threads: 10. Time: 2335.
-Len: 10000000. Threads: 20. Time: 3438.
+Len: 10000000. Threads: 1. Time: 6639.
+Len: 10000000. Threads: 2. Time: 3647.
+Len: 10000000. Threads: 4. Time: 2319.
+Len: 10000000. Threads: 10. Time: 2307.
+Len: 10000000. Threads: 20. Time: 3338.
 ```
