@@ -9,3 +9,20 @@
 arr[i] = (arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2))
 ```
 * Заполнение массива по формуле выполнять в несколько потоков.
+
+# Результат
+## Thread
+```
+Len: 10000000. Threads: 1. Time: 6525.
+Len: 10000000. Threads: 4. Time: 6557.
+Len: 10000000. Threads: 10. Time: 6686.
+Len: 10000000. Threads: 20. Time: 6751.
+```
+
+## Process
+```
+Len: 10000000. Threads: 1. Time: 6685.
+Len: 10000000. Threads: 4. Time: 2370.
+Len: 10000000. Threads: 10. Time: 2335.
+Len: 10000000. Threads: 20. Time: 3438.
+```
