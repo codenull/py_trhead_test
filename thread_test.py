@@ -1,6 +1,7 @@
 from threading import Thread
-from math import  sin, cos
+from math import sin, cos
 from array import array
+
 
 class MyThread(Thread):
 
@@ -21,8 +22,8 @@ class MyThread(Thread):
         return result
 
 
-def create_array(len):
-    return array('f', [1]) * len
+def create_array(array_len):
+    return array('f', [1]) * array_len
 
 
 def main():
