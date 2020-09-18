@@ -1,4 +1,4 @@
-from threading import Thread
+from multiprocessing import Process as Thread
 from math import sin, cos
 from array import array
 import time
