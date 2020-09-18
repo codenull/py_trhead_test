@@ -1,6 +1,7 @@
 from threading import Thread
 from math import sin, cos
 from array import array
+import time
 
 
 class MyThread(Thread):
@@ -36,6 +37,8 @@ def make_calc(array_len, thread_count):
     val_array = create_array(array_len)
 
     # Запуск расчетов.
+    current_milli_time = lambda: int(round(time.time() * 1000))
+    start_time = current_milli_time()
     thread_list = []
     for i in range(thread_count):
         offset = i * size
@@ -52,6 +55,9 @@ def make_calc(array_len, thread_count):
     for thread in thread_list:
         result += thread.array
 
+    work_time = current_milli_time() - start_time
+    print("Len: {}. Threads: {}. Time: {}.".format(array_len, thread_count, work_time))
+
     return result
 
 
@@ -59,8 +65,8 @@ def make_calc(array_len, thread_count):
 
 def main():
     print("Start")
-    make_calc(100, 2)
-    make_calc(1000, 4)
+    make_calc(10000000, 1)
+    make_calc(10000000, 4)
 
 
 
